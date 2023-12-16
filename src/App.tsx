@@ -1,18 +1,17 @@
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import './index.css';
-import logo from './logo.svg';
-import ScrollToTop from './components/ScrollToTop';
-import {useDocTitle} from './components/CustomHook';
 import {
+  Route,
   BrowserRouter as Router,
-  Routes,
-  Route
+  Routes
 } from 'react-router-dom';
-import Home from './pages/Home';
-import  Contact  from './pages/Contact';
+import { useDocTitle } from './components/CustomHook';
+import ScrollToTop from './components/ScrollToTop';
+import './index.css';
+import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
+import Home from './pages/Home';
 
 function App() {
   useEffect(() => {
