@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import Notiflix from 'notiflix';
-import React, { ChangeEvent, FormEvent, useState } from 'react';
+import React, {FormEvent, useState } from 'react';
 import { useDocTitle } from '../components/CustomHook';
 import Footer from '../components/Footer';
 import NavBar from '../components/Navbar/NavBar';
@@ -13,7 +13,7 @@ const DemoProduct: React.FC = () => {
     const [email, setEmail] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
     const [message, setMessage] = useState<string>('');
-    const [demoProducts, setDemoProducts] = useState<string[]>([]);
+    const [demoProducts] = useState<string[]>([]);
     const [errors, setErrors] = useState<any>([]);
 
     // const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

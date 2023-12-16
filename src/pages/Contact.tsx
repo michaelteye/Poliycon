@@ -193,11 +193,11 @@ const Contact = () => {
 
                 <div className="flex flex-col">
                   <h2 className="text-2xl">Call Us</h2>
-                  <p className="text-gray-400"></p>
+                  <p className="text-gray-400">www.policycon.com</p>
 
                   <div className="mt-5">
-                    <h2 className="text-2xl"></h2>
-                    <p className="text-gray-400"></p>
+                    <h2 className="text-2xl">Send an E-mail</h2>
+                    <p className="text-gray-400">@policycon</p>
                   </div>
                 </div>
               </div>
