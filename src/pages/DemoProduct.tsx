@@ -1,9 +1,9 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import NavBar from '../components/Navbar/NavBar';
-import Footer from '../components/Footer';
-import { useDocTitle } from '../components/CustomHook';
-import axios, { AxiosResponse, AxiosError } from 'axios';
+import axios, { AxiosError, AxiosResponse } from 'axios';
 import Notiflix from 'notiflix';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
+import { useDocTitle } from '../components/CustomHook';
+import Footer from '../components/Footer';
+import NavBar from '../components/Navbar/NavBar';
 
 const DemoProduct: React.FC = () => {
     useDocTitle('MLD | Molad e Konsult - Demo our products');
@@ -16,16 +16,16 @@ const DemoProduct: React.FC = () => {
     const [demoProducts, setDemoProducts] = useState<string[]>([]);
     const [errors, setErrors] = useState<any>([]);
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
-        const checked = e.target.checked;
-        const updatedProducts = checked
-            ? [...demoProducts, value]
-            : demoProducts.filter((item) => item !== value);
+    // const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    //     const value = e.target.value;
+    //     const checked = e.target.checked;
+    //     const updatedProducts = checked
+    //         ? [...demoProducts, value]
+    //         : demoProducts.filter((item) => item !== value);
 
-        setDemoProducts(updatedProducts);
-        setErrors({ ...errors, products: [] });
-    };
+    //     setDemoProducts(updatedProducts);
+    //     setErrors({ ...errors, products: [] });
+    // };
 
     const clearErrors = () => {
         setErrors([]);
