@@ -166,7 +166,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   id="submitBtn"
-                  className="uppercase text-sm font-bold tracking-wide bg-gray-500 hover:bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
+                  className="uppercase text-sm font-bold tracking-wide bg-gray-500 hover:bg-red-900 text-gray-100 p-3 rounded-lg w-full 
                                     focus:outline-none focus:shadow-outline"
                 >
                   Send Message
@@ -174,7 +174,7 @@ const Contact = () => {
               </div>
             </div>
           </form>
-          <div className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
+          <div className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-red-900 rounded-2xl">
             <div className="flex flex-col text-white">
               <div className="flex my-4 w-2/3 lg:w-3/4">
                 <div className="flex flex-col">
