@@ -82,7 +82,7 @@ const Contact = () => {
           <form onSubmit={sendEmail}>
             <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
               <div className="flex">
-                <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">
+                <h1 className="font-bold text-center lg:text-left text-red-900 uppercase text-4xl">
                   Send us a message
                 </h1>
               </div>
